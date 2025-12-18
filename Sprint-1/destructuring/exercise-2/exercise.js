@@ -72,17 +72,16 @@ let hogwarts = [
 ];
 
 
-hogwarts.forEach((person) => {
-  const { firstName, lastName, house} = person;
-
-  if (house === "Gryffindor") {
+hogwarts.forEach((person) => { // loop through the array
+  const { firstName, lastName, house} = person; // destructure the info that we need
+  if (house === "Gryffindor") { // only prints if they belong to house Gryffindor 
     console.log(`${firstName} ${lastName}`);
   }
 })
 
-hogwarts.forEach((person) => {
-  const { firstName, lastName, occupation, pet} = person;
-  if (occupation === "Teacher" && pet !== "None") {
-    console.log(`${firstName} ${lastName}`);
+hogwarts.forEach((person) => { // loop through the array
+  const { firstName, lastName, occupation, pet} = person; // destructure what we need
+  if (occupation === "Teacher" && pet !== "None") { // looks only for teachers and they must have a pet
+    console.log(`${firstName} ${lastName}`); // print the name 
   }
 })
