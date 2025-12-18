@@ -8,22 +8,24 @@ let order = [
 ];
 
 
-console.log("QTY       ITEM              TOTAL");
+console.log("QTY       ITEM              TOTAL"); // formatting
 
-let totalCost = 0;
+let totalCost = 0; // in pence to avoid decimal errors
 
-order.forEach((item) => {
-  const {itemName, quantity, unitPricePence} = item;
+order.forEach((item) => { // loop through the order
+  const {itemName, quantity, unitPricePence} = item; // object destructuring
 
+  // calculate the total from pence to pounds
   const itemTotalPence = quantity * unitPricePence;
-  const itemTotalPounds = (itemTotalPence / 100).toFixed(2);
+  const itemTotalPounds = (itemTotalPence / 100).toFixed(2); // guarantees 2 decimal 
 
-  totalCost += itemTotalPence;
+  totalCost += itemTotalPence; // add to overall total 
 
-  console.log(
+  console.log( // format the row correctly
     `${quantity.toString().padEnd(8)}${itemName.padEnd(20)}${itemTotalPounds}`
   );
 });
 
+// print final total
 console.log("");
 console.log(`Total: ${(totalCost / 100).toFixed(2)}`);
