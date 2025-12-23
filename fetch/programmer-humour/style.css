@@ -1,7 +1,12 @@
+html,body{
+        height: 100%;
+        margin: 0;
+}
 body{
     background-image:url(/Module-Data-Flows/fetch/programmer-humour/images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 h1{
@@ -12,6 +17,14 @@ h1{
 }
 
 #mainTitle{
+    background-color: rgba(0, 0, 0, 0.312);
+    border-radius: 25px;
+    width: 50%;
+    align-content: center;
+    justify-self: center;
+}
+
+#container {
     background-color: rgba(0, 0, 0, 0.312);
     border-radius: 25px;
     width: 50%;
