@@ -9,6 +9,10 @@ body{
     background-position: center;
 }
 
+main{
+    min-height: 100vh;
+}
+
 h1{
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -16,18 +20,13 @@ h1{
     text-align: center;
 }
 
-#mainTitle{
+#mainTitle,
+#container{
     background-color: rgba(0, 0, 0, 0.312);
     border-radius: 25px;
     width: 50%;
     align-content: center;
     justify-self: center;
-}
-
-#container {
-    background-color: rgba(0, 0, 0, 0.312);
-    border-radius: 25px;
-    width: 50%;
-    align-content: center;
-    justify-self: center;
+    align-items: center;
+    text-align: center;
 }
